@@ -291,6 +291,8 @@ pub fn get_native_cpu() -> Cpu {
             Cpu::Arm64
         } else if #[cfg(target_arch = "arm")] {
             Cpu::Arm
+        } else if #[cfg(target_arch = "riscv64")] {
+            Cpu::Riscv64
         }
     }
 }
